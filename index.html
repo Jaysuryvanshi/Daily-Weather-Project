@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span class="left">Daily </span>
+            <span class="right">Weather</span>
+        </h1>
+    </header>
+    <div class="main-container">
+        <!-- ==========left sidebar============= -->
+        <div class="sidebar-left">
+            <h2><span>E</span>nter a <span>C</span>ity <span>N</span>ame</h2>
+            <input type="text" id="city" placeholder="Type Your City Name" required>
+            <select id="recentCities"></select>
+
+            <button id="searchBtn">Search</button>
+            <p class="divider">or</p>
+            <button id="locationBtn">Use Current Location</button>
+        </div>
+        <!-- ===============sidebar-right================== -->
+        <div class="sidebar-right">
+            <div id="currentWeather" class="card"></div>
+            <h3 class="fab">5-Days Forcast ⬇</h3>
+            <div id="forecast" class="forecaste"></div>
+        </div>
+    </div>
+
+    </div>  
+    <!-- ========footer section========================== -->
+<footer>
+  <p class="foo">&copy; <span id="year"></span> | Coded with ❤️ by <span>J</span>ay <span>S</span>uryavanshi</p>
+</footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
