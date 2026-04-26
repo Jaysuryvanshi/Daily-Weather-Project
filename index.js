@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const rest = cityName.slice(1);
 
         document.getElementById("currentWeather").innerHTML = `
-            <h3>
+            <h3 class="h">
                 <span class="first-letter">${firstLetter}</span>${rest}
             </h3>
 
@@ -125,16 +125,16 @@ document.addEventListener("DOMContentLoaded", () => {
             "🔥 Extreme Heat Alert!";
         }
 
-        // background change
-        if (temp > 32) {
-            document.body.style.backgroundImage = "url('s1.png')";
-            document.body.style.backgroundSize = "cover";
-        }
+        // // background change
+        // if (temp > 32) {
+        //     document.body.style.backgroundImage = "url('s1.png')";
+        //     document.body.style.backgroundSize = "cover";
+        // }
 
-        if (temp < 25) {
-            document.body.style.backgroundImage = "url('r1.png')";
-            document.body.style.backgroundSize = "cover";
-        }
+        // if (temp < 25) {
+        //     document.body.style.backgroundImage = "url('r1.png')";
+        //     document.body.style.backgroundSize = "cover";
+        // }
 
         // forecast
         const forecastDiv = document.getElementById("forecast");
